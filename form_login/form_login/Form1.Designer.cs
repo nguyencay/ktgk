@@ -30,8 +30,8 @@ namespace form_login
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.textboxusername = new System.Windows.Forms.TextBox();
+            this.textboxmatkhau = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,20 +45,21 @@ namespace form_login
             this.label1.TabIndex = 0;
             this.label1.Text = "UserName";
             // 
-            // txtUserName
+            // textboxusername
             // 
-            this.txtUserName.Location = new System.Drawing.Point(316, 149);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(274, 22);
-            this.txtUserName.TabIndex = 1;
+            this.textboxusername.Location = new System.Drawing.Point(316, 149);
+            this.textboxusername.Name = "textboxusername";
+            this.textboxusername.Size = new System.Drawing.Size(274, 22);
+            this.textboxusername.TabIndex = 1;
+            this.textboxusername.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
-            // txtpassword
+            // textboxmatkhau
             // 
-            this.txtpassword.Location = new System.Drawing.Point(316, 215);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(274, 22);
-            this.txtpassword.TabIndex = 3;
-            this.txtpassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textboxmatkhau.Location = new System.Drawing.Point(316, 215);
+            this.textboxmatkhau.Name = "textboxmatkhau";
+            this.textboxmatkhau.Size = new System.Drawing.Size(274, 22);
+            this.textboxmatkhau.TabIndex = 3;
+            this.textboxmatkhau.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -85,9 +86,9 @@ namespace form_login
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.textboxmatkhau);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.textboxusername);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -99,8 +100,8 @@ namespace form_login
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.TextBox textboxusername;
+        private System.Windows.Forms.TextBox textboxmatkhau;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogin;
     }

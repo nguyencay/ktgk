@@ -26,5 +26,10 @@ namespace form_login
         {
 
         }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
