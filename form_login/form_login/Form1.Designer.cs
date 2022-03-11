@@ -75,10 +75,11 @@ namespace form_login
             // 
             this.btnLogin.Location = new System.Drawing.Point(316, 279);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 40);
+            this.btnLogin.Size = new System.Drawing.Size(107, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
