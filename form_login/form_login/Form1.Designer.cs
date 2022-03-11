@@ -41,9 +41,9 @@ namespace form_login
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(187, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.Size = new System.Drawing.Size(100, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "UserName";
+            this.label1.Text = "tên đăng nhập";
             // 
             // textboxusername
             // 
@@ -66,9 +66,9 @@ namespace form_login
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(187, 218);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            this.label2.Text = "mật khẩu";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnLogin
@@ -77,7 +77,7 @@ namespace form_login
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 40);
             this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // Form1
