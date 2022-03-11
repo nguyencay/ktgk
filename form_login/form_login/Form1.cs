@@ -16,5 +16,31 @@ namespace form_login
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            String username = textboxusername.Text;
+            String password = textboxmatkhau.Text;
+            if (username=="admin" && password=="admin")
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+            }
+        }
     }
 }
